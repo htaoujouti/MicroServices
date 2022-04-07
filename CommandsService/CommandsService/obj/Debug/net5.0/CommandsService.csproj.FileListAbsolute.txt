@@ -33,3 +33,10 @@ C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\o
 C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\obj\Debug\net5.0\CommandsService.pdb
 C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\obj\Debug\net5.0\CommandsService.genruntimeconfig.cache
 C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\obj\Debug\net5.0\ref\CommandsService.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\Humanizer.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\htaoujouti\source\repos\MicroServices\CommandsService\CommandsService\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
