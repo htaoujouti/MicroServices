@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: commandservice
-        image: hamzataoujouti/k8_commandservice:latest
+        image: hamzataoujouti/k8s_commandservice:1.1.1
         imagePullPolicy: Never
      #   ports:
       #  - containerPort: 80
@@ -33,4 +33,4 @@ spec:
     - name: commandservice
       protocol: TCP
       targetPort: 80
-      port: 8080
+      port: 80

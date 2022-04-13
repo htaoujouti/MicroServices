@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: platformservice
-        image: hamzataoujouti/k8_platformservice:latest
+        image: hamzataoujouti/k8s_platformservice:1.1.1
         imagePullPolicy: Never
      #   ports:
       #  - containerPort: 80
@@ -33,4 +33,4 @@ spec:
     - name: platformservice
       protocol: TCP
       targetPort: 80
-      port: 8080
+      port: 80
