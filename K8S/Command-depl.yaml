@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: commandservice-deploy
+ # labels:
+  #  app: commandservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: commandservice
+  template:
+    metadata:
+      labels:
+        app: commandservice
+    spec:
+      containers:
+      - name: commandservice
+        image: hamzataoujouti/k8_commandservice:latest
+        imagePullPolicy: Never
+     #   ports:
+      #  - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: commandservice-ip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: commandservice
+  ports:
+    - name: commandservice
+      protocol: TCP
+      targetPort: 80
+      port: 8080
