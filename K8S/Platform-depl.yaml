@@ -16,8 +16,7 @@ spec:
     spec:
       containers:
       - name: platformservice
-        image: hamzataoujouti/k8s_platformservice:1.1.1
-        imagePullPolicy: Never
+        image: hamzataoujouti/platformservice:2.0.1
      #   ports:
       #  - containerPort: 80
 ---

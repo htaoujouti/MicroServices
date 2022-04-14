@@ -16,8 +16,7 @@ spec:
     spec:
       containers:
       - name: commandservice
-        image: hamzataoujouti/k8s_commandservice:1.1.1
-        imagePullPolicy: Never
+        image: hamzataoujouti/commandservice:2.0.1        
      #   ports:
       #  - containerPort: 80
 ---
