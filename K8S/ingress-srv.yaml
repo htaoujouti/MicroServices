@@ -24,5 +24,3 @@ spec:
                 name: commandservice-ip-srv
                 port:
                   number: 80
-									
-
