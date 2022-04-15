@@ -28,14 +28,13 @@ spec:
                 name: mssql
                 key: SA_PASSWORD
         volumeMounts:
-          - mountPath: /var/opt/mssql/data
-            name: mssqldb
+          - name: mssqldb
+            mountPath: /var/opt/mssql/data            
       volumes:
       - name:  mssqldb
         persistentVolumeClaim: 
           claimName: mssql-claim
 ---
-# https://kubernetes.io/docs/concepts/services-networking/service/
 apiVersion: v1
 kind: Service
 metadata:
@@ -53,10 +52,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mssql
+  name: mssql-loadbalancer
 spec:
   selector:
-    app: mssql-loadbalancer
+    app: mssql
   type: LoadBalancer
   ports:
   - protocol: TCP
