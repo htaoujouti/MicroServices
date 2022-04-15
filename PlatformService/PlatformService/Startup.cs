@@ -35,7 +35,7 @@ namespace PlatformService
         {
             if (_env.IsProduction())
             {
-                Console.WriteLine("--> Using InMem Db");
+                Console.WriteLine("--> Using SQLServer Db");
                 services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("platformconn")));
             }
             else
@@ -43,7 +43,7 @@ namespace PlatformService
                 Console.WriteLine("--> Using InMem Db");
                 services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
             }
-            services.AddScoped<IPlatformRepo, PlatformRepo>();
+    services.AddScoped<IPlatformRepo, PlatformRepo>();
             services.AddHttpClient<ICommandDataClient,HttpCommandDataClient>();
             //services.AddMvc();
             services.AddControllers();
@@ -75,7 +75,7 @@ namespace PlatformService
             {
                 endpoints.MapControllers();
             });
-            PrepDb.PrepPopulation(app);
+            PrepDb.PrepPopulation(app, env.IsProduction());
 
         }
     }
