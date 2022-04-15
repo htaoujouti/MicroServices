@@ -3,8 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: mssql-claim
 spec:
-  resources:
-    requests:
-      storage: 200Mi
   accessModes:
     - ReadWriteMany
+  resources:
+    requests:
+      storage: 200Mi  
+#kubectl create secret generic mssql --from-literal=SA_PASSWORD="MyC0m9l&xPa*sw0rd"
