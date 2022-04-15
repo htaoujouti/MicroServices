@@ -10,17 +10,18 @@ spec:
     - host: acme.com
       http:
         paths:
-          - path: /api/Platforms
+          - path: /api/platforms
             pathType: Prefix
             backend:
               service:
                 name: platformservice-ip-srv
                 port:
                   number: 80
-          - path: /api/c/Platforms
+          - path: /api/c/platforms
             pathType: Prefix
             backend:
               service:
                 name: commandservice-ip-srv
                 port:
                   number: 80
+#kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 8080:80   to forward traffic from port 8080 to 80 because port 80 have other services                  
