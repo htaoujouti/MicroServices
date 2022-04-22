@@ -2,7 +2,7 @@
 
 namespace CommandsService.Models
 {
-    public class command
+    public class Command
     {
         [Key]
         [Required]
@@ -13,6 +13,6 @@ namespace CommandsService.Models
         public string CommandLine { get; set; }
         [Required]
         public int PlatformId { get; set; }
-        public Platform platform { get; set; }
+        public Platform Platform { get; set; }
     }
 }

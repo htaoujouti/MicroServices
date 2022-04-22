@@ -13,6 +13,6 @@ namespace CommandsService.Models
         [Required]
         public string Name { get; set; }
 
-        public ICollection<command> Commands { get; set; }  = new List<command>();
+        public ICollection<Command> Commands { get; set; }  = new List<Command>();
     }
 }
