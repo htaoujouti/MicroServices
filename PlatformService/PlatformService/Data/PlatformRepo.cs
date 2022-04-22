@@ -30,7 +30,7 @@ namespace PlatformService.Data
 
         public Platform GetPlatformById(int id)
         {
-            return _appDbContext.platforms.FirstOrDefault(p => p.Id == id);
+            return _appDbContext.platforms.FirstOrDefault(p => p.I  d == id);
         }
 
         public bool SaveChanges()
