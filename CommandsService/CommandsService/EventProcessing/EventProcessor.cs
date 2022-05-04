@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CommandsService.Data;
 using CommandsService.Dtos;
+using CommandsService.Models;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Text.Json;
@@ -37,7 +38,32 @@ namespace CommandsService.EventProcessing
                     return EventType.Undetermined;
             }
         }
-        
+        private void addPlatform(string platformPublishedMessage)
+        {
+            using (var scope = _scopefactory.CreateScope())
+            {
+                var repo = scope.ServiceProvider.GetRequiredService<ICommandRepo>();
+                var platformPublishedDto = JsonSerializer.Deserialize<PlatformPublishedDto>(platformPublishedMessage);
+                try
+                {
+                    var plat = _mapper.Map<Platform>(platformPublishedDto);
+
+                    if (!repo.ExternalPlatformExist(plat.ExternalId)){
+                        repo.CreatePlatform(plat);
+                        repo.saveChanges();
+                        Console.WriteLine("--> platform added!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("--> platform already exsits...");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"--> Could not add Platform to DB: {ex.Message}");
+                }
+            }
+        }
 
     }
     enum EventType
