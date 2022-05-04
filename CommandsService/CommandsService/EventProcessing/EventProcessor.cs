@@ -23,6 +23,20 @@ namespace CommandsService.EventProcessing
         {
 
         }
+        private EventType Determinate(string message)
+        {
+            Console.WriteLine("--> Determining Event...");
+            var eventType = JsonSerializer.Deserialize<GenericEventDto>(message);
+            switch (eventType.Event)
+            {
+                case "Platform_Published":
+                    Console.WriteLine("--> platform Published Event Detected!");
+                    return EventType.PlatformPublished;
+                default:
+                    Console.WriteLine("--> Could not determine the event type!");
+                    return EventType.Undetermined;
+            }
+        }
         
 
     }
