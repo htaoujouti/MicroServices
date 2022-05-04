@@ -22,7 +22,15 @@ namespace CommandsService.EventProcessing
         }
         public void ProcessEvent(string message)
         {
-
+            var eventType = Determinate(message);
+            switch (eventType)
+            {
+                case EventType.PlatformPublished:
+                    addPlatform(message);
+                    break;
+                default:
+                    break;
+            }
         }
         private EventType Determinate(string message)
         {
