@@ -58,5 +58,10 @@ namespace CommandsService.Data
         {
             return _appDbContext.Commands.Where(c => c.PlatformId == platformId && c.Id == commandId).FirstOrDefault();
         }
+
+        public bool ExternalPlatformExist(int externalPlatformId)
+        {
+            return _appDbContext.Platforms.Any(p => p.ExternalId == externalPlatformId);
+        }
     }
 }
