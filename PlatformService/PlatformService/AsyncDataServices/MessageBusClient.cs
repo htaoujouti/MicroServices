@@ -18,8 +18,8 @@ namespace PlatformService.AsyncDataServices
             _configuration = configuration;
             var factory = new ConnectionFactory()
             {
-                HostName = _configuration["RabbitMQHost"],
-                Port = int.Parse(_configuration["RabbitMQPort"])
+                HostName = _configuration["rabbitMQHost"],
+                Port = int.Parse(_configuration["rabbitMQPort"])
             };
             try
             {
