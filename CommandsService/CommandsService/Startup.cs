@@ -1,3 +1,4 @@
+using CommandsService.AsyncDataServices;
 using CommandsService.Data;
 using CommandsService.EventProcessing;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +34,7 @@ namespace CommandsService
             services.AddScoped<ICommandRepo, CommandRepo>();
             services.AddSingleton<IEventProcessor, EventProcessor>();
             services.AddControllers();
+            services.AddHostedService<MessageBusSubscriber>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
