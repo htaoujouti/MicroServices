@@ -56,7 +56,7 @@ namespace CommandsService.Data
 
         public IEnumerable<Command> GetCommandsForPlatform(int platformId)
         {
-            return _appDbContext.Commands.Where(c => c.Id == platformId).OrderBy(c => c.Platform.Name);
+            return _appDbContext.Commands.Where(c => c.PlatformId == platformId).OrderBy(c => c.Platform.Name);            
         }
 
         public Command GetCommand(int platformId, int commandId)
