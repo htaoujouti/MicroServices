@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: platformservice
-        image: hamzataoujouti/platformservice:2.1.0
+        image: hamzataoujouti/platformservice:latest
      #   ports:
       #  - containerPort: 80
 ---

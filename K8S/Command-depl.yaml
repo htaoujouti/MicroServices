@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: commandservice
-        image: hamzataoujouti/commandservice:2.0.1        
+        image: hamzataoujouti/commandservice:latest        
      #   ports:
       #  - containerPort: 80
 ---
