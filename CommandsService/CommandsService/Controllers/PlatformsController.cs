@@ -27,7 +27,16 @@ namespace CommandsService.Controllers
             var PlatformItem = _repo.GetAllPlatforms();
             return Ok(_mapper.Map<IEnumerable<PlatformReadDtos>>(PlatformItem));
         }
-      
+        [HttpGet("{id}", Name = "GetPlatformById")]
+        public ActionResult<PlatformReadDtos> GetPlatformById(int id)
+        {
+            Console.WriteLine("GetPlatformById(id)");
+            var platform = _repo.GetPlatformById(id);
+            if (platform != null)
+                return Ok(_mapper.Map<PlatformReadDtos>(platform));
+            return NotFound();
+        }
+
         [HttpPost]
         public ActionResult TestInboundConnection()
         {

@@ -39,6 +39,11 @@ namespace CommandsService.Data
                 return _appDbContext.Platforms.ToList();
         }
 
+        public Platform GetPlatformById(int id)
+        {
+            return _appDbContext.Platforms.FirstOrDefault(p => p.Id == id);
+        }
+
         public bool PlatformExist(int platformId)
         {
             return _appDbContext.Platforms.Any(p => p.Id == platformId);
