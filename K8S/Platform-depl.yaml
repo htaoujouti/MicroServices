@@ -33,3 +33,7 @@ spec:
       protocol: TCP
       targetPort: 80
       port: 80
+    - name: platformGrpc
+      protocol: TCP
+      port: 666
+      targetPort: 666  
