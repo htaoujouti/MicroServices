@@ -1,0 +1,26 @@
+_id: req_9e0f3b1a12fe46a19061d7c5a47daa81
+type: Request
+parentId: fld_103eea9c8a434f20b5fb9b66973fc669
+modified: 1649925163729
+created: 1649668826818
+url: http://localhost:6000/api/c/Platforms
+name: Post a platform
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7b9e4d6907304897b459d48630d76025
+authentication: {}
+metaSortKey: -1649144713445
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

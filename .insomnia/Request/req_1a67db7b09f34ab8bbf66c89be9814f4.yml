@@ -1,0 +1,31 @@
+_id: req_1a67db7b09f34ab8bbf66c89be9814f4
+type: Request
+parentId: fld_37fd9f1183614c5394dfe8912f1daaca
+modified: 1651834490472
+created: 1649144713445
+url: http://localhost:30002/api/Platforms
+name: Post a platform
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"name": "Java",
+    		"publisher": "Oracle",
+    		"cost": "Free"
+    	}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7b9e4d6907304897b459d48630d76025
+authentication: {}
+metaSortKey: -1649144713445
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,30 @@
+_id: req_92a84e31fe1b4eec9f8c52fed90ee5ce
+type: Request
+parentId: fld_103eea9c8a434f20b5fb9b66973fc669
+modified: 1651831583545
+created: 1650895065657
+url: http://localhost:6000/api/c/platforms/4/commands
+name: Post a Command
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "howTo": "How to deploy app",
+      "commandLine": "javac <app_name>"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3aaf88e4be5f40b1bf92360a214f9ffb
+authentication: {}
+metaSortKey: -1650895065657
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

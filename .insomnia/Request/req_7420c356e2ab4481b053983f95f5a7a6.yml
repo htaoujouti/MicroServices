@@ -1,0 +1,31 @@
+_id: req_7420c356e2ab4481b053983f95f5a7a6
+type: Request
+parentId: fld_6a387ba804dd40adb603061bef223ee9
+modified: 1651831561874
+created: 1649232189903
+url: http://localhost:5000/api/Platforms
+name: Post a platform
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"name": "k8s",
+    		"publisher": "k8s",
+    		"cost": "Free"
+    	}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7b9e4d6907304897b459d48630d76025
+authentication: {}
+metaSortKey: -1649144713445
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

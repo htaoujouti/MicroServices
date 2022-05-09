@@ -1,0 +1,10 @@
+_id: fld_1c4128a081f8433085c88261a2c97253
+type: RequestGroup
+parentId: fld_86bf784eb1ab497096245901ded0d54c
+modified: 1649925103922
+created: 1649925103922
+name: Platform Service (NginxGateway)
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1649144457109.5

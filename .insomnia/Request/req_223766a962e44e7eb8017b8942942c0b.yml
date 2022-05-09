@@ -1,0 +1,21 @@
+_id: req_223766a962e44e7eb8017b8942942c0b
+type: Request
+parentId: fld_37fd9f1183614c5394dfe8912f1daaca
+modified: 1649921110742
+created: 1649144509726
+url: http://localhost:30002/api/Platforms/1
+name: GET by ID
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1649144509726
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

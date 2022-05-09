@@ -1,0 +1,21 @@
+_id: req_1603cc8d4e384a2ba2fb7f2cd76474b7
+type: Request
+parentId: fld_5af1c453bb074872a0b9034fae211724
+modified: 1651835974072
+created: 1651835849914
+url: http://acme.com:8080/api/c/platforms/2003/commands/1
+name: Get All Commands For Platform
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1649144475403
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

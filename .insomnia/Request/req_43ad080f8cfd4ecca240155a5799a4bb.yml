@@ -1,0 +1,21 @@
+_id: req_43ad080f8cfd4ecca240155a5799a4bb
+type: Request
+parentId: fld_103eea9c8a434f20b5fb9b66973fc669
+modified: 1651764698691
+created: 1650887455463
+url: http://localhost:6000/api/c/platforms/4/commands
+name: Get All Commands For Platform
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1649144475453
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

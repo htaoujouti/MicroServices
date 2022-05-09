@@ -1,0 +1,21 @@
+_id: req_5b403aef9ca54da38e783b5e6e652392
+type: Request
+parentId: fld_5af1c453bb074872a0b9034fae211724
+modified: 1651835925967
+created: 1651835849900
+url: http://acme.com:8080/api/c/platforms/2003
+name: GET by ID
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1649144509726
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

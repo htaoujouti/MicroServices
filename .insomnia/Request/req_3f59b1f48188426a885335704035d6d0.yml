@@ -1,0 +1,30 @@
+_id: req_3f59b1f48188426a885335704035d6d0
+type: Request
+parentId: fld_5af1c453bb074872a0b9034fae211724
+modified: 1652084703399
+created: 1651835849919
+url: http://acme.com:8080/api/c/platforms/2003/commands
+name: Post a Command
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "howTo": "How to suspend vm",
+      "commandLine": "vagrant suspend"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3aaf88e4be5f40b1bf92360a214f9ffb
+authentication: {}
+metaSortKey: -1650895065657
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

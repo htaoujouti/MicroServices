@@ -1,0 +1,26 @@
+_id: req_2860d8f848414c15ab94cb624042b979
+type: Request
+parentId: fld_5af1c453bb074872a0b9034fae211724
+modified: 1651836068435
+created: 1651835849905
+url: http://acme.com:8080/api/c/Platforms
+name: Post a platform
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7b9e4d6907304897b459d48630d76025
+authentication: {}
+metaSortKey: -1649144713445
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
