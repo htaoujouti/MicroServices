@@ -35,3 +35,4 @@ spec:
       port: 80
 
 # kubectl apply -f Command-depl.yaml
+# kubectl rollout restart deployment deployment_name_to_restart

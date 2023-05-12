@@ -27,7 +27,7 @@ namespace CommandsService.SnycDataServices.Grpc
             try
             {
                 var reply = client.GetAllPlatforms(request);
-                return _mapper.Map<IEnumerable<Platform>>(reply);
+                return _mapper.Map<IEnumerable<Platform>>(reply.Platform);
             }
             catch(Exception ex)
             {
