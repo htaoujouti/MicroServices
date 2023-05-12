@@ -25,10 +25,7 @@
   </ItemGroup>
 	
   <ItemGroup>
-	  <Protobuf Include="Protos\Platforms.proto" GrpcServices="Server" />
+	  <Protobuf Include="Protos\Platforms.proto" GrpcServices="Client" />
   </ItemGroup>
-	
-  <ItemGroup>
-    <Folder Include="SyncDataServices\Grpc\" />
-  </ItemGroup>
+
 </Project>
