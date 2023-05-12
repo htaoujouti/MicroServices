@@ -56,3 +56,5 @@ spec:
     protocol: TCP
     port:  15672
     targetPort: 15672  
+
+#kubectl apply -f rabbitmq-deploy.yml

@@ -33,3 +33,5 @@ spec:
       protocol: TCP
       targetPort: 80
       port: 80
+
+# kubectl apply -f Command-depl.yaml

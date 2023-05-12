@@ -24,5 +24,7 @@ spec:
                 name: commandservice-ip-srv
                 port:
                   number: 80
-#kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 8080:80   to forward traffic from port 8080 to 80 because port 80 have other services                  
+                  
 #kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+#kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 8080:80   to forward traffic from port 8080 to 80 because port 80 have other services                  
+#kubectl apply -f ingress-srv.yaml

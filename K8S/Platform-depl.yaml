@@ -37,3 +37,5 @@ spec:
       protocol: TCP
       port: 666
       targetPort: 666  
+
+# kubectl apply -f Platform-depl.yaml
